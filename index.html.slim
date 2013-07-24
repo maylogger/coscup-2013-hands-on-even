@@ -1,0 +1,21 @@
+
+.header
+  h1 COSCUP 2013 Hands-on：一小時 RWD 就上手 (SUSY responsive grid for compass.) - Even Wu
+
+.row
+  .main= render 'main-article'
+  .sidebar= render 'sidebar'
+
+button.reg 現在就報名
+h2= "#{@attendee = 45} 報名人"
+.attendees
+  - @attendee.times do
+    span.attendee
+      span.picture: img src='#{lorem_image(64)}'
+      span.nickname= zh_lorem_words rand(4) + 2
+
+.footer
+  p
+    | Choose your language: 
+    a href="#" English 
+    a href="#" 繁體中文 

@@ -1,0 +1,50 @@
+body {
+  font-family: "HelveticaNeue-Light",
+               "Helvetica",
+               "Arial",
+               sans-serif;
+  -webkit-text-size-adjust: none;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+#{headings()} {
+  @include reset-box-model;
+}
+
+h1 {
+  @include adjust-font-size-to(32px, 1.5);
+  @include trailer(1);
+}
+
+h2 {
+  @include adjust-font-size-to(16px);
+  @include trailer(1);
+}
+
+p,
+li {
+  @include adjust-font-size-to(13px, 3/4);
+  @include trailer(1);
+}
+
+li {
+  @include trailer(1/4);
+}
+
+a {
+  @include link-colors(blue);
+  @include hover-link;
+}
+
+.reg {
+  @include adjust-font-size-to(13px, 3/4);
+  background: green;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  display: block;
+  width: 70%;
+  margin: 0 auto;
+  @include trailer(1);
+}

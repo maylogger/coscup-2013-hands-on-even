@@ -1,0 +1,28 @@
+.sidebar {
+  @include leader(3);
+  @include trailer(3);
+}
+
+.widget {
+  @include padding-trailer(2/3);
+  h2 {
+    @include adjust-font-size-to(13px, 5/4);
+    margin: 0;
+    padding-left: 8px;
+    background: #444;
+    color: white;
+  }
+  .widget-body {
+    @include adjust-font-size-to(12px, 3/4);
+    padding: 4px 8px;
+    background: #eeeeef;
+    border-width: 0 1px 1px;
+    border-color: #ddd;
+    border-style: solid;
+  }
+}
+
+.widget + .widget {
+  // @include leading-border(1px, 2/3);
+  // border-color: #cccccf;
+}

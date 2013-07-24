@@ -1,0 +1,31 @@
+$total-columns    : 4;
+$column-width     : 5em;
+$gutter-width     : 1em;
+$grid-padding     : 1em;
+
+// $desktop: 960px 12;
+
+// $container-style: static;
+// $container-width: false;
+
+body {
+  @include padding-leader(1);
+  @include padding-trailer(1);
+}
+
+.row {
+  @include pie-clearfix;
+}
+
+.page {
+  @include container;
+  // @include susy-grid-background;
+}
+
+.footer {
+  @include leader(3);
+  p {
+    @include adjust-font-size-to(13px);
+    color: #666;
+  }
+}

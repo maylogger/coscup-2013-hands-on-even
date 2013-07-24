@@ -1,0 +1,9 @@
+doctype 5
+html lang="zh-TW"
+  head
+    meta charset="utf-8"
+    title coscup-2013-hands-on-even
+    = stylesheet_link_tag "all"
+  body
+    .page= yield
+    = livereload_js unless ENV["RACK_ENV"] == "production"

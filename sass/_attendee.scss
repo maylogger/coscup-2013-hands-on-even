@@ -1,0 +1,23 @@
+.attendees {
+  @include pie-clearfix;
+}
+
+.attendee {
+  display: block;
+  @include isolate-grid(1);
+  .picture {
+    display: block;
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+  .nickname {
+    color: #444;
+    display: block;
+    text-align: center;
+    @include ellipsis;
+    @include adjust-font-size-to(12px);
+    @include trailer(.5);
+  }
+}
