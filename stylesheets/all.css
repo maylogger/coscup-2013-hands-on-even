@@ -131,9 +131,9 @@ body { padding-top: 24px; padding-bottom: 24px; }
 .footer { margin-top: 72px; }
 .footer p { font-size: 13px; line-height: 24px; color: #666; }
 
-body { font-family: "HelveticaNeue-Light", "Helvetica", "Arial", sans-serif; -webkit-text-size-adjust: none; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+body { font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; font-weight: 300; -webkit-text-size-adjust: none; text-rendering: optimizeLegibility; color: #444; }
 
-h1, h2, h3, h4, h5, h6 { margin: 0; padding: 0; border: 0; }
+h1, h2, h3, h4, h5, h6 { margin: 0; padding: 0; border: 0; font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; font-weight: 400; color: black; }
 
 h1 { font-size: 32px; line-height: 36px; margin-bottom: 24px; }
 
@@ -158,7 +158,7 @@ a:hover { text-decoration: underline; }
 .attendee:nth-child(4n + 4) { margin-left: 78.26087%; }
 .attendee .picture { display: block; }
 .attendee .picture img { display: block; width: 100%; }
-.attendee .nickname { color: #444; display: block; text-align: center; white-space: nowrap; overflow: hidden; -ms-text-overflow: ellipsis; -o-text-overflow: ellipsis; text-overflow: ellipsis; font-size: 12px; line-height: 24px; margin-bottom: 12px; }
+.attendee .nickname { display: block; text-align: center; white-space: nowrap; overflow: hidden; -ms-text-overflow: ellipsis; -o-text-overflow: ellipsis; text-overflow: ellipsis; font-size: 12px; line-height: 24px; margin-bottom: 12px; }
 
 .sidebar { margin-top: 72px; margin-bottom: 72px; }
 
