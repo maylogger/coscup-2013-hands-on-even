@@ -3,7 +3,9 @@ html lang="zh-TW"
   head
     meta charset="utf-8"
     title coscup-2013-hands-on-even
+    /meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"
     = stylesheet_link_tag "all"
+
   body
     .page= yield
     = livereload_js unless ENV["RACK_ENV"] == "production"
