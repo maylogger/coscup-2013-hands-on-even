@@ -8,11 +8,11 @@
   width: 70%;
   margin: 0 auto;
   @include trailer(1);
-  @include at-breakpoint($desktop) {
-    display: inline-block;
-    width: auto;
-    padding: 8px 48px;
-  }
+  // @include at-breakpoint($desktop) {
+  //   display: inline-block;
+  //   width: auto;
+  //   padding: 8px 48px;
+  // }
 }
 
 .attendees {
@@ -22,9 +22,9 @@
 .attendee {
   display: block;
   @include isolate-grid(1);
-  @include at-breakpoint($desktop) {
-    @include isolate-grid(1);
-  }
+  // @include at-breakpoint($desktop) {
+  //   @include isolate-grid(1);
+  // }
   .picture {
     display: block;
     img {
