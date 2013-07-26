@@ -1,6 +1,9 @@
 .sidebar {
   @include leader(3);
   @include trailer(3);
+  @include at-breakpoint($desktop) {
+    margin: 0;
+  }
 }
 
 .widget {

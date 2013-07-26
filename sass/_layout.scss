@@ -1,9 +1,9 @@
 $total-columns    : 4;
 $column-width     : 5em;
-$gutter-width     : 1em;
+$gutter-width     : 1.5em;
 $grid-padding     : 1em;
 
-// $desktop: 960px 12;
+$desktop: 768px 8;
 
 // $container-style: static;
 // $container-width: false;
@@ -19,7 +19,23 @@ body {
 
 .page {
   @include container;
-  // @include susy-grid-background;
+  @include susy-grid-background;
+  @include at-breakpoint($desktop) {
+    @include container;
+    @include susy-grid-background;
+  }
+}
+
+@include at-breakpoint($desktop) {
+  .header {
+    margin: 48px 0;
+  }
+  .main {
+    @include span-columns(5);
+  }
+  .sidebar {
+    @include span-columns(3 omega);
+  }
 }
 
 .footer {
