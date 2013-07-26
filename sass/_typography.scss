@@ -38,15 +38,3 @@ a {
   @include link-colors(blue);
   @include hover-link;
 }
-
-.reg {
-  @include adjust-font-size-to(13px, 3/4);
-  background: green;
-  color: white;
-  border: none;
-  padding: 8px 16px;
-  display: block;
-  width: 70%;
-  margin: 0 auto;
-  @include trailer(1);
-}

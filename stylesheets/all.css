@@ -77,7 +77,7 @@ figure { margin: 0; }
 
 /* ========================================================================== Forms ========================================================================== */
 /** Define consistent border, margin, and padding. */
-fieldset { border: 1px solid silver; margin: 0 2px; padding: 0.35em 0.625em 0.75em; }
+fieldset { border: 1px solid #c0c0c0; margin: 0 2px; padding: 0.35em 0.625em 0.75em; }
 
 /** 1. Correct `color` not being inherited in IE 8/9. 2. Remove padding so people aren't caught out if they zero out fieldsets. */
 legend { border: 0; /* 1 */ padding: 0; /* 2 */ }
@@ -146,19 +146,19 @@ li { margin-bottom: 6px; }
 a { color: blue; text-decoration: none; }
 a:hover { text-decoration: underline; }
 
-.reg { font-size: 13px; line-height: 18px; background: green; color: white; border: none; padding: 8px 16px; display: block; width: 70%; margin: 0 auto; margin-bottom: 24px; }
-
 .attendees { *zoom: 1; }
 .attendees:after { content: ""; display: table; clear: both; }
 
 .attendee { display: block; width: 21.73913%; float: left; margin-right: 4.34783%; display: inline; margin-right: -100%; }
 .attendee:nth-child(4n + 1) { margin-left: 0%; clear: left; }
-.attendee:nth-child(4n + 2) { margin-left: 26.08696%; }
-.attendee:nth-child(4n + 3) { margin-left: 52.17391%; }
-.attendee:nth-child(4n + 4) { margin-left: 78.26087%; }
+.attendee:nth-child(4n + 2) { margin-left: 26.08696%; clear: none; }
+.attendee:nth-child(4n + 3) { margin-left: 52.17391%; clear: none; }
+.attendee:nth-child(4n + 4) { margin-left: 78.26087%; clear: none; }
 .attendee .picture { display: block; }
 .attendee .picture img { display: block; width: 100%; }
 .attendee .nickname { display: block; text-align: center; white-space: nowrap; overflow: hidden; -ms-text-overflow: ellipsis; -o-text-overflow: ellipsis; text-overflow: ellipsis; font-size: 12px; line-height: 24px; margin-bottom: 12px; }
+
+.reg { font-size: 13px; line-height: 18px; background: green; color: white; border: none; padding: 8px 16px; display: block; width: 70%; margin: 0 auto; margin-bottom: 24px; }
 
 .sidebar { margin-top: 72px; margin-bottom: 72px; }
 
